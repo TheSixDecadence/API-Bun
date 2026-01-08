@@ -4,13 +4,17 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "start": "bun run index.ts",
-    "dev": "bun --watch run index.ts"
+    "start": "bun run api/index.ts",
+    "dev": "bun --watch run api/index.ts"
   },
   "devDependencies": {
     "@types/bun": "latest"
   },
   "peerDependencies": {
     "typescript": "^5"
+  },
+  "dependencies": {
+    "@cerebras/cerebras_cloud_sdk": "^1.64.1",
+    "groq-sdk": "^0.37.0"
   }
 }
